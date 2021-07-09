@@ -26,7 +26,7 @@
 - name: test by print
   debug:
     msg: firing nortification for redhat
-  nortify: restart rhel apache
+  notify: restart rhel apache
   when: ansible_os_family == "RedHat"
 
   

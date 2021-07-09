@@ -1,2 +1,10 @@
 ---
 # handlers file for apache-webserver
+- name: restart debian
+  service:
+    name: "{{ apache_package_deb}}"
+    state: restarted
+- name: restart rhel
+  service:
+    name: "{{ apache_package_rhel}}"
+    state: restarted
